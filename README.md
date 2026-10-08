@@ -6,6 +6,18 @@ Hands-on Microsoft security investigation lab focused on endpoint alert triage, 
 
 ![Microsoft Security Investigation Workflow](docs/investigation-workflow.svg)
 
+## Lab Evidence
+
+### Defender for Endpoint
+
+![Defender for Endpoint Lab Evidence](docs/defender-lab-summary.svg)
+
+### Microsoft Sentinel / KQL
+
+![Microsoft Sentinel KQL Lab Evidence](docs/sentinel-kql-summary.svg)
+
+> These are portfolio evidence visuals built from the actual lab work. They are **not fabricated product screenshots**. Actual product screenshots should only be used when they come from the user's own lab session.
+
 ## What I Practiced
 
 | Area | Experience |
@@ -103,10 +115,6 @@ This lab strengthened my understanding of:
 **Querying:** KQL, SQL  
 **Analytics:** Power BI, Python, Pandas, Excel  
 **Operations:** Incident Management, Escalation Triage, RCA, SLA/MTTR Analysis
-
-## Evidence & Portfolio Note
-
-The workflow visual above is a **portfolio diagram**, not a screenshot of a production environment. Actual Microsoft 365 lab screenshots should only be added when they are available from the user's own lab session, with sensitive tenant/account information removed.
 
 ## Important Note
 
