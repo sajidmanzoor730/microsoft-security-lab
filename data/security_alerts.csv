@@ -1,0 +1,13 @@
+AlertId,Timestamp,Title,Category,Severity,ServiceSource,DetectionSource,AttackTechnique,DeviceName,EntityType,InvestigationStatus,ActionTaken,MTTR_Minutes
+SEC-2026-001,2026-09-02 09:14:22,Malware detected in downloaded file,Malware,High,Microsoft Defender for Endpoint,Antimalware,T1204.002,WIN-OPS-014,File,Resolved,File quarantined and device reviewed,18
+SEC-2026-002,2026-09-03 11:42:08,Suspicious PowerShell activity,Execution,High,Microsoft Defender for Endpoint,Behavior monitoring,T1059.001,WIN-OPS-021,Process,Resolved,Process investigated and activity contained,27
+SEC-2026-003,2026-09-04 14:06:51,Phishing URL blocked,Phishing,Medium,Microsoft Defender for Office 365,Safe Links,T1566.002,WIN-OPS-009,Url,Resolved,URL blocked and message reviewed,14
+SEC-2026-004,2026-09-05 16:33:17,Potential credential theft activity,CredentialAccess,High,Microsoft Defender for Endpoint,Behavior monitoring,T1056,WIN-OPS-018,Process,Investigated,Endpoint activity reviewed and credentials reset,41
+SEC-2026-005,2026-09-08 10:18:45,Malicious executable detected,Malware,High,Microsoft Defender for Endpoint,Antimalware,T1204.002,WIN-OPS-006,File,Resolved,File quarantined and scan completed,22
+SEC-2026-006,2026-09-09 12:27:31,Suspicious browser download,Malware,Medium,Microsoft Defender for Endpoint,Antimalware,T1204.002,WIN-OPS-011,File,Resolved,Download removed and device reviewed,16
+SEC-2026-007,2026-09-11 09:51:12,Phishing attachment detected,Phishing,High,Microsoft Defender for Office 365,Safe Attachments,T1566.001,WIN-OPS-024,File,Resolved,Attachment blocked and mailbox reviewed,21
+SEC-2026-008,2026-09-12 15:22:09,Encoded PowerShell command,Execution,Medium,Microsoft Defender for Endpoint,Behavior monitoring,T1059.001,WIN-OPS-003,Process,Investigated,Command reviewed and process terminated,24
+SEC-2026-009,2026-09-15 13:44:56,Unusual network connection,CommandAndControl,Medium,Microsoft Defender for Endpoint,Network protection,T1071.001,WIN-OPS-017,Ip,Resolved,Connection blocked and endpoint checked,31
+SEC-2026-010,2026-09-18 17:08:34,Potential credential dumping behavior,CredentialAccess,High,Microsoft Defender for Endpoint,Behavior monitoring,T1003,WIN-OPS-022,Process,Resolved,Process contained and endpoint investigated,36
+SEC-2026-011,2026-09-21 10:36:19,Suspicious remote connection,CommandAndControl,Medium,Microsoft Defender for Endpoint,Network protection,T1071.001,WIN-OPS-013,Ip,Resolved,Remote connection blocked,19
+SEC-2026-012,2026-09-24 14:17:43,Malware detected in temporary directory,Malware,High,Microsoft Defender for Endpoint,Antimalware,T1204.002,WIN-OPS-028,File,Resolved,File quarantined and full scan completed,25
