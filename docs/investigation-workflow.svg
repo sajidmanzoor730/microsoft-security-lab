@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" fill="#ffffff"/>
+  <text x="600" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#111827">Microsoft Security Investigation Workflow</text>
+  <text x="600" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4b5563">Hands-on lab workflow practiced with Defender for Endpoint and Microsoft Sentinel</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="70" y="155" width="250" height="145" rx="16" fill="#f3f4f6" stroke="#111827" stroke-width="2"/>
+    <text x="195" y="195" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">1. Alert Intake</text>
+    <text x="195" y="230" text-anchor="middle" font-size="16" fill="#374151">Review alert context</text>
+    <text x="195" y="255" text-anchor="middle" font-size="16" fill="#374151">Severity and evidence</text>
+    <text x="195" y="280" text-anchor="middle" font-size="16" fill="#374151">Affected device/activity</text>
+
+    <rect x="475" y="155" width="250" height="145" rx="16" fill="#f3f4f6" stroke="#111827" stroke-width="2"/>
+    <text x="600" y="195" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">2. Investigation</text>
+    <text x="600" y="230" text-anchor="middle" font-size="16" fill="#374151">Prioritize alerts</text>
+    <text x="600" y="255" text-anchor="middle" font-size="16" fill="#374151">Review entities</text>
+    <text x="600" y="280" text-anchor="middle" font-size="16" fill="#374151">Trace investigation context</text>
+
+    <rect x="880" y="155" width="250" height="145" rx="16" fill="#f3f4f6" stroke="#111827" stroke-width="2"/>
+    <text x="1005" y="195" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">3. Query &amp; Analyze</text>
+    <text x="1005" y="230" text-anchor="middle" font-size="16" fill="#374151">Write KQL queries</text>
+    <text x="1005" y="255" text-anchor="middle" font-size="16" fill="#374151">Filter and summarize</text>
+    <text x="1005" y="280" text-anchor="middle" font-size="16" fill="#374151">Identify patterns</text>
+
+    <line x1="320" y1="228" x2="475" y2="228" stroke="#111827" stroke-width="3"/>
+    <polygon points="475,228 458,218 458,238" fill="#111827"/>
+    <line x1="725" y1="228" x2="880" y2="228" stroke="#111827" stroke-width="3"/>
+    <polygon points="880,228 863,218 863,238" fill="#111827"/>
+
+    <rect x="270" y="390" width="660" height="145" rx="16" fill="#f9fafb" stroke="#111827" stroke-width="2"/>
+    <text x="600" y="430" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">4. Operational Outcome</text>
+    <text x="600" y="466" text-anchor="middle" font-size="16" fill="#374151">Prioritize • document • communicate • identify improvement opportunities</text>
+    <text x="600" y="496" text-anchor="middle" font-size="15" fill="#4b5563">Lab focus: structured investigation, technical troubleshooting, and data-driven analysis</text>
+
+    <line x1="1005" y1="300" x2="1005" y2="355" stroke="#111827" stroke-width="3"/>
+    <line x1="1005" y1="355" x2="600" y2="355" stroke="#111827" stroke-width="3"/>
+    <line x1="195" y1="300" x2="195" y2="355" stroke="#111827" stroke-width="3"/>
+    <line x1="195" y1="355" x2="600" y2="355" stroke="#111827" stroke-width="3"/>
+    <line x1="600" y1="355" x2="600" y2="390" stroke="#111827" stroke-width="3"/>
+    <polygon points="600,390 590,373 610,373" fill="#111827"/>
+  </g>
+
+  <text x="600" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Portfolio visual — represents the lab workflow, not a screenshot of a production environment.</text>
+</svg>
