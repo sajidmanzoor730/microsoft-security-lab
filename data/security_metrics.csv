@@ -1,0 +1,12 @@
+Metric,Value
+Total Alerts,12
+High Severity,6
+Medium Severity,6
+Resolved,10
+Investigated,2
+Average MTTR Minutes,25.3
+Malware Alerts,4
+Phishing Alerts,2
+Execution Alerts,2
+Credential Access Alerts,2
+Command and Control Alerts,2
