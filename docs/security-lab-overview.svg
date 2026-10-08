@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<rect width="1600" height="1100" fill="#f5f8fc"/>
+<rect x="0" y="0" width="1600" height="150" fill="#0b1f3a"/>
+<circle cx="76" cy="75" r="42" fill="#2563eb"/><path d="M76 43l25 10v25c0 23-15 36-25 40-10-4-25-17-25-40V53z" fill="#fff" opacity=".95"/>
+<text x="140" y="62" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#fff">Microsoft Security Lab</text>
+<text x="140" y="101" font-family="Arial,sans-serif" font-size="20" fill="#cbd5e1">Threat investigation • KQL analysis • Security operations analytics</text>
+<rect x="1210" y="38" width="110" height="72" rx="12" fill="#12345c"/><text x="1265" y="67" text-anchor="middle" font-family="Arial" font-size="13" fill="#fff">DEFENDER</text><text x="1265" y="89" text-anchor="middle" font-family="Arial" font-size="12" fill="#93c5fd">Endpoint</text>
+<rect x="1335" y="38" width="110" height="72" rx="12" fill="#12345c"/><text x="1390" y="67" text-anchor="middle" font-family="Arial" font-size="13" fill="#fff">SENTINEL</text><text x="1390" y="89" text-anchor="middle" font-family="Arial" font-size="12" fill="#93c5fd">KQL</text>
+<rect x="1460" y="38" width="110" height="72" rx="12" fill="#12345c"/><text x="1515" y="67" text-anchor="middle" font-family="Arial" font-size="13" fill="#fff">POWER BI</text><text x="1515" y="89" text-anchor="middle" font-family="Arial" font-size="12" fill="#93c5fd">KPIs</text>
+
+<text x="50" y="205" font-family="Arial" font-size="27" font-weight="700" fill="#10233f">Investigation overview</text>
+<g font-family="Arial">
+<rect x="50" y="230" width="350" height="120" rx="16" fill="#fff" stroke="#dbe4ef"/><text x="75" y="265" font-size="15" fill="#64748b">ALERTS INVESTIGATED</text><text x="75" y="320" font-size="42" font-weight="700" fill="#10233f">12</text>
+<rect x="420" y="230" width="350" height="120" rx="16" fill="#fff" stroke="#dbe4ef"/><text x="445" y="265" font-size="15" fill="#64748b">HIGH SEVERITY</text><text x="445" y="320" font-size="42" font-weight="700" fill="#10233f">6</text>
+<rect x="790" y="230" width="350" height="120" rx="16" fill="#fff" stroke="#dbe4ef"/><text x="815" y="265" font-size="15" fill="#64748b">RESOLVED</text><text x="815" y="320" font-size="42" font-weight="700" fill="#10233f">10</text>
+<rect x="1160" y="230" width="390" height="120" rx="16" fill="#fff" stroke="#dbe4ef"/><text x="1185" y="265" font-size="15" fill="#64748b">AVERAGE MTTR</text><text x="1185" y="320" font-size="42" font-weight="700" fill="#10233f">25.3 min</text>
+</g>
+
+<rect x="50" y="390" width="730" height="310" rx="18" fill="#fff" stroke="#dbe4ef"/>
+<text x="80" y="430" font-family="Arial" font-size="24" font-weight="700" fill="#10233f">Defender for Endpoint — Alert Investigation</text>
+<rect x="80" y="455" width="670" height="70" rx="10" fill="#0f172a"/><text x="100" y="485" font-family="Arial" font-size="16" fill="#fff">Suspicious PowerShell execution</text><text x="100" y="508" font-family="Arial" font-size="13" fill="#fca5a5">HIGH • T1059.001 • Endpoint</text>
+<text x="85" y="565" font-family="Arial" font-size="15" fill="#475569">Evidence reviewed</text><text x="85" y="592" font-family="Arial" font-size="14" fill="#10233f">Process context • device • account • related entities</text>
+<text x="85" y="635" font-family="Arial" font-size="15" fill="#475569">Investigation outcome</text><text x="85" y="662" font-family="Arial" font-size="14" fill="#10233f">Alert triaged, evidence validated and response documented.</text>
+
+<rect x="800" y="390" width="750" height="310" rx="18" fill="#fff" stroke="#dbe4ef"/>
+<text x="830" y="430" font-family="Arial" font-size="24" font-weight="700" fill="#10233f">Microsoft Sentinel — KQL Analysis</text>
+<rect x="830" y="455" width="690" height="130" rx="10" fill="#0f172a"/>
+<text x="850" y="482" font-family="Consolas,monospace" font-size="14" fill="#93c5fd">AlertInfo</text><text x="850" y="504" font-family="Consolas,monospace" font-size="14" fill="#e2e8f0">| where Severity == "High"</text><text x="850" y="526" font-family="Consolas,monospace" font-size="14" fill="#e2e8f0">| summarize AlertCount=count() by DetectionSource</text><text x="850" y="548" font-family="Consolas,monospace" font-size="14" fill="#e2e8f0">| order by AlertCount desc</text>
+<text x="830" y="620" font-family="Arial" font-size="15" fill="#475569">Analysis focus</text><text x="830" y="648" font-family="Arial" font-size="14" fill="#10233f">Prioritization • evidence correlation • repeated entities • source trends</text>
+<text x="830" y="678" font-family="Arial" font-size="14" fill="#2563eb">5 investigation queries documented</text>
+
+<rect x="50" y="735" width="1000" height="300" rx="18" fill="#fff" stroke="#dbe4ef"/>
+<text x="80" y="775" font-family="Arial" font-size="24" font-weight="700" fill="#10233f">Security Operations Dashboard</text>
+<g font-family="Arial"><text x="85" y="820" font-size="13" fill="#64748b">SEVERITY MIX</text><rect x="85" y="840" width="380" height="34" rx="7" fill="#eef2f7"/><rect x="85" y="840" width="190" height="34" rx="7" fill="#2563eb"/><text x="100" y="863" font-size="13" fill="#fff">High 6</text><text x="290" y="863" font-size="13" fill="#475569">Medium 6</text>
+<text x="85" y="910" font-size="13" fill="#64748b">RESOLUTION STATUS</text><rect x="85" y="930" width="380" height="34" rx="7" fill="#eef2f7"/><rect x="85" y="930" width="317" height="34" rx="7" fill="#16a34a"/><text x="100" y="953" font-size="13" fill="#fff">Resolved 10</text><text x="420" y="953" font-size="13" fill="#475569">2 open</text>
+<text x="520" y="820" font-size="13" fill="#64748b">CATEGORY COVERAGE</text><circle cx="570" cy="885" r="65" fill="none" stroke="#dbe4ef" stroke-width="22"/><path d="M570 820 A65 65 0 0 1 631 906" fill="none" stroke="#2563eb" stroke-width="22"/><text x="570" y="891" text-anchor="middle" font-size="22" font-weight="700" fill="#10233f">5</text><text x="650" y="855" font-size="14" fill="#10233f">Malware</text><text x="650" y="882" font-size="14" fill="#10233f">Phishing</text><text x="650" y="909" font-size="14" fill="#10233f">PowerShell</text><text x="650" y="936" font-size="14" fill="#10233f">Credential access</text></g>
+
+<rect x="1070" y="735" width="480" height="300" rx="18" fill="#fff" stroke="#dbe4ef"/>
+<text x="1100" y="775" font-family="Arial" font-size="24" font-weight="700" fill="#10233f">Key findings</text>
+<g font-family="Arial" font-size="15" fill="#334155"><text x="1100" y="820">• 12 alerts investigated across security scenarios</text><text x="1100" y="855">• 6 high-severity alerts prioritized for review</text><text x="1100" y="890">• 10 investigations resolved; 2 remained open</text><text x="1100" y="925">• Average MTTR across resolved alerts: 25.3 min</text><text x="1100" y="960">• KQL used to filter, correlate and summarize activity</text><text x="1100" y="995">• MITRE ATT&amp;CK mapping added investigation context</text></g>
+
+<rect x="0" y="1060" width="1600" height="40" fill="#0b1f3a"/><text x="50" y="1086" font-family="Arial" font-size="14" fill="#cbd5e1">Microsoft Security Lab • Defender for Endpoint • Sentinel • KQL • Power BI • MITRE ATT&amp;CK</text>
+</svg>
