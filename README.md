@@ -4,6 +4,8 @@ Hands-on Microsoft security investigation lab focused on endpoint alert triage, 
 
 > **Scope:** Personal hands-on lab/project work using Microsoft 365 E5 trial capabilities. This repository does **not** represent production Microsoft security employment experience.
 
+![Microsoft Security Investigation Workflow](docs/investigation-workflow.svg)
+
 ## What I Practiced
 
 | Area | Experience |
@@ -101,6 +103,10 @@ This lab strengthened my understanding of:
 **Querying:** KQL, SQL  
 **Analytics:** Power BI, Python, Pandas, Excel  
 **Operations:** Incident Management, Escalation Triage, RCA, SLA/MTTR Analysis
+
+## Evidence & Portfolio Note
+
+The workflow visual above is a **portfolio diagram**, not a screenshot of a production environment. Actual Microsoft 365 lab screenshots should only be added when they are available from the user's own lab session, with sensitive tenant/account information removed.
 
 ## Important Note
 
