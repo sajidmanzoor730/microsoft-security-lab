@@ -1,21 +1,40 @@
 # Microsoft Security Investigation Lab
 
-Microsoft security investigation work focused on endpoint alert triage, Microsoft Sentinel, KQL-based investigation, and security operations analysis.
+Microsoft security investigation project focused on endpoint alert triage, Microsoft Sentinel, KQL-based investigation, and security operations analytics.
 
 ![Microsoft Security Investigation Workflow](docs/investigation-workflow.svg)
+
+## Security Operations Dashboard
+
+![Security Operations Investigation Dashboard](docs/security-operations-dashboard.svg)
+
+### Investigation Summary
+
+| KPI | Result |
+|---|---:|
+| Alerts investigated | 12 |
+| High severity | 6 |
+| Medium severity | 6 |
+| Resolved | 10 |
+| Investigated | 2 |
+| Average MTTR | 25.3 min |
+| Malware alerts | 4 |
+| Phishing alerts | 2 |
 
 ## Defender for Endpoint
 
 ![Defender for Endpoint Lab Analysis](docs/defender-lab-summary.svg)
 
-I investigated **10+ Microsoft Defender for Endpoint alerts** involving malware and phishing scenarios.
+The investigation covered malware, phishing, suspicious PowerShell activity, credential-access behavior, and unusual network connections.
 
-Key investigation areas:
+Analysis included:
 - Alert severity and context
-- Affected devices and activity
-- Alert evidence
-- Investigation prioritization
-- Structured escalation workflow
+- Detection source
+- Affected device and entity
+- MITRE ATT&CK technique mapping
+- Investigation status
+- Response action
+- Mean time to resolution
 
 ## Microsoft Sentinel & KQL
 
@@ -23,41 +42,70 @@ Key investigation areas:
 
 I wrote and tested **5+ KQL queries** covering filtering, aggregation, severity analysis, and entity-level investigation.
 
-### Alert severity analysis
+### Alert investigation with AlertInfo and AlertEvidence
 
 ```kql
-SecurityAlert
-| where TimeGenerated > ago(7d)
-| summarize AlertCount = count() by AlertSeverity
+AlertInfo
+| where Timestamp > ago(30d)
+| where ServiceSource == "Microsoft Defender for Endpoint"
+| join AlertEvidence on AlertId
+| project Timestamp, AlertId, Title, Severity,
+          Category, DetectionSource, DeviceName,
+          EntityType, AttackTechniques
+| order by Timestamp desc
+```
+
+### High-severity alerts
+
+```kql
+AlertInfo
+| where Timestamp > ago(30d)
+| where Severity == "High"
+| summarize AlertCount = count()
+    by Category, DetectionSource
 | order by AlertCount desc
 ```
 
-### High-severity investigation
+### MTTR analysis
 
 ```kql
 SecurityAlert
-| where TimeGenerated > ago(7d)
-| where AlertSeverity == "High"
-| project TimeGenerated, AlertSeverity, AlertName, ProviderName
-| order by TimeGenerated desc
+| summarize
+    AlertCount = count(),
+    AvgMTTR = avg(MTTR_Minutes)
+    by Severity
+| order by AvgMTTR desc
 ```
 
-### Entity-level investigation
+## Investigation Dataset
 
-```kql
-SecurityAlert
-| where TimeGenerated > ago(7d)
-| summarize AlertCount = count() by CompromisedEntity
-| order by AlertCount desc
-```
+The project dataset contains alert-level investigation fields including:
+
+- Alert ID
+- Timestamp
+- Alert title
+- Category
+- Severity
+- Service source
+- Detection source
+- MITRE ATT&CK technique
+- Device
+- Entity type
+- Investigation status
+- Action taken
+- MTTR
+
+[View the investigation dataset](data/security_alerts.csv)
+
+[View KPI summary](data/security_metrics.csv)
 
 ## Security & Analytics Skills
 
 **Microsoft Security:** Defender for Endpoint, Microsoft Sentinel, Defender for Cloud, Defender for Office 365  
-**Security Analytics:** Alert Triage, Incident Investigation, Prioritization, Evidence Review, RCA Thinking  
+**Security Analytics:** Alert Triage, Incident Investigation, Prioritization, Evidence Review, MITRE ATT&CK Mapping  
 **Querying:** KQL, SQL  
 **Analytics:** Power BI, Python, Pandas, Excel  
-**Operations:** Escalation Management, SLA/MTTR Analysis, Technical Troubleshooting
+**Operations:** Escalation Management, RCA, SLA/MTTR Analysis, Technical Troubleshooting
 
 ## Related Analytics Project
 
@@ -71,7 +119,7 @@ Repository: https://github.com/sajidmanzoor730/helpdesk-kpi-dashboard
 
 ## Investigation Workflow
 
-**Alert → Triage → Investigate → Query → Analyze → Prioritize → Operational Outcome**
+**Alert → Triage → Investigate → Query → Analyze → Prioritize → Respond → Operational Outcome**
 
 This project demonstrates the combination of technical troubleshooting, security investigation, KQL analysis, and operational reporting.
 
