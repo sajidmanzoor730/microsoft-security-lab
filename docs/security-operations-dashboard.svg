@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900">
 <rect width="1400" height="900" fill="#ffffff"/>
 <text x="70" y="65" font-family="Arial" font-size="34" font-weight="700" fill="#111827">Security Operations Investigation Dashboard</text>
-<text x="70" y="100" font-family="Arial" font-size="16" fill="#6b7280">Microsoft Defender / Sentinel investigation analysis</text>
+<text x="70" y="100" font-family="Arial" font-size="16" fill="#6b7280">Illustrative portfolio dataset — not live Defender / Sentinel telemetry</text>
 <g font-family="Arial">
 <rect x="70" y="145" width="270" height="125" rx="16" fill="#f3f4f6" stroke="#d1d5db"/><text x="205" y="190" text-anchor="middle" font-size="42" font-weight="700" fill="#111827">12</text><text x="205" y="225" text-anchor="middle" font-size="17" fill="#374151">Alerts Investigated</text>
-<rect x="370" y="145" width="270" height="125" rx="16" fill="#f3f4f6" stroke="#d1d5db"/><text x="505" y="190" text-anchor="middle" font-size="42" font-weight="700" fill="#111827">6</text><text x="505" y="225" text-anchor="middle" font-size="17" fill="#374151">High Severity</text>
+<rect x="370" y="145" width="270" height="125" rx="16" fill="#f3f4f6" stroke="#d1d5db"/><text x="505" y="190" text-anchor="middle" font-size="42" font-weight="700" fill="#111827">7</text><text x="505" y="225" text-anchor="middle" font-size="17" fill="#374151">High Severity</text>
 <rect x="670" y="145" width="270" height="125" rx="16" fill="#f3f4f6" stroke="#d1d5db"/><text x="805" y="190" text-anchor="middle" font-size="42" font-weight="700" fill="#111827">25.3m</text><text x="805" y="225" text-anchor="middle" font-size="17" fill="#374151">Average MTTR</text>
 <rect x="970" y="145" width="270" height="125" rx="16" fill="#f3f4f6" stroke="#d1d5db"/><text x="1105" y="190" text-anchor="middle" font-size="42" font-weight="700" fill="#111827">10</text><text x="1105" y="225" text-anchor="middle" font-size="17" fill="#374151">Resolved</text>
 
@@ -20,7 +20,7 @@
 <text x="730" y="435" font-size="18" fill="#374151">Email</text><rect x="870" y="415" width="90" height="25" rx="12" fill="#111827"/><text x="980" y="435" font-size="17" fill="#374151">3</text>
 
 <text x="730" y="500" font-size="23" font-weight="700" fill="#111827">Severity Distribution</text>
-<rect x="730" y="535" width="430" height="38" rx="19" fill="#e5e7eb"/><rect x="730" y="535" width="215" height="38" rx="19" fill="#111827"/><text x="760" y="561" font-size="16" fill="#ffffff">High 6</text><text x="985" y="561" font-size="16" fill="#374151">Medium 6</text>
+<rect x="730" y="535" width="430" height="38" rx="19" fill="#e5e7eb"/><rect x="730" y="535" width="251" height="38" rx="19" fill="#111827"/><text x="760" y="561" font-size="16" fill="#ffffff">High 7</text><text x="985" y="561" font-size="16" fill="#374151">Medium 5</text>
 
 <text x="70" y="665" font-size="23" font-weight="700" fill="#111827">Resolved MTTR Spread</text>
 <text x="70" y="705" font-size="17" fill="#374151">≤20 min</text><rect x="180" y="685" width="180" height="25" rx="12" fill="#111827"/><text x="380" y="705" font-size="17" fill="#374151">3</text>
@@ -33,4 +33,4 @@
 <text x="730" y="765" font-size="18" fill="#374151">Investigated</text><rect x="900" y="745" width="60" height="25" rx="12" fill="#111827"/><text x="975" y="765" font-size="17" fill="#374151">2</text>
 <text x="730" y="825" font-size="16" fill="#6b7280">Resolved MTTR values: 20, 24, 16, 27, 19, 23, 32, 38, 22, 32</text>
 <text x="730" y="850" font-size="16" fill="#6b7280">253 ÷ 10 = 25.3 min average</text>
-</g></svg>
+</g><text x="70" y="850" font-family="Arial" font-size="15" fill="#6b7280">Illustrative data only; metrics are not from a production tenant.</text></svg>
