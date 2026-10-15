@@ -1,7 +1,7 @@
 Metric,Value
 Total Alerts,12
-High Severity,6
-Medium Severity,6
+High Severity,7
+Medium Severity,5
 Resolved,10
 Investigated,2
 Average MTTR Minutes,25.3
