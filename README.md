@@ -42,7 +42,7 @@ Analysis included:
 
 ![Microsoft Sentinel KQL Analysis](docs/sentinel-kql-summary.svg)
 
-I wrote and tested **5+ KQL queries** covering filtering, aggregation, severity analysis, and entity-level investigation.
+I prepared **5+ KQL query examples** covering filtering, aggregation, severity analysis, and entity-level investigation. These are templates; validate table names, columns, permissions, and results in your own Microsoft security workspace before using them.
 
 ### Alert investigation with AlertInfo and AlertEvidence
 
