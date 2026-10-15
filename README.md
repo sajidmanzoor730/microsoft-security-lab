@@ -1,5 +1,7 @@
 # Microsoft Security Investigation Lab
 
+> **Dataset disclosure:** `data/security_alerts.csv` is an illustrative portfolio/lab dataset, not a real export from a Microsoft Defender for Endpoint or Microsoft Sentinel tenant. The KPI values and case outcomes demonstrate analysis methods only and must not be presented as production incident metrics. KQL examples are templates to validate against the actual workspace schema before use.
+
 Microsoft security investigation project focused on endpoint alert triage, Microsoft Sentinel, KQL-based investigation, and security operations analytics.
 
 ![Microsoft Security Investigation Workflow](docs/investigation-workflow.svg)
@@ -13,8 +15,8 @@ Microsoft security investigation project focused on endpoint alert triage, Micro
 | KPI | Result |
 |---|---:|
 | Alerts investigated | 12 |
-| High severity | 6 |
-| Medium severity | 6 |
+| High severity | 7 |
+| Medium severity | 5 |
 | Resolved | 10 |
 | Investigated | 2 |
 | Average MTTR | 25.3 min |
